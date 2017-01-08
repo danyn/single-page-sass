@@ -1,0 +1,61 @@
+//font variables
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,200,600,800);
+$fontfamily       : 'Exo 2', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$thin: 200;
+$normal: 400;
+$bold: 600;
+$heavy: 800;
+
+$fontMain : $thin 1.0em/1.0em $fontfamily;
+
+$headFont: $thin 1.5em/1.5em $fontfamily;
+
+$light : #fceaea ;
+$dark:#151414;
+//base font size and em value for text container width values
+$fontSize : 16px;
+
+//site colors
+$yellow : #d1d183;
+$orange : orange;
+$purple:#3c33a7;
+$green:#6ca8a4;
+$red:#891a1a;
+
+//backgrounds
+$trans:$dark;
+  //nav
+$navBg : #2f6696;
+$navBrandBg : #985993;
+$navText : #f4e5b6;
+
+
+
+//body 
+$colorFont : #332d2d;
+$colorBody : #d0c2c2;
+
+
+
+//headings
+
+$headColor: #3558b7;
+
+//spacing
+$gutterSmall:15px;
+
+//susy's sass map data
+
+$susy: (
+	columns:24,
+	container:60rem,
+	gutters: 1/4,
+	gutter-position: inside
+);
+
+$narrow: 400px;
+$small:  650px;
+$small_i:$small - 1;
+$medium: 960px;
+$wide:  1200px;

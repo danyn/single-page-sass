@@ -1,0 +1,23 @@
+body{
+	color:$colorFont;
+	background-color: $colorBody;
+	font: $fontMain;
+	font-size:$fontSize;
+	
+}
+
+#{headings()}{
+	font : $headFont;
+	color: $headColor;
+	
+}
+
+strong{
+	font-weight: $heavy;
+}
+
+p{
+	font: $fontMain;
+	padding-bottom:10px;
+	
+}

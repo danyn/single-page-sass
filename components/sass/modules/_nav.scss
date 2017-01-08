@@ -1,0 +1,86 @@
+#intro #nav {
+	@include clearfix;
+	@include background-image( linear-gradient(top, lighten($navBg,15),$navBg));
+	
+	.navbar{
+		
+		@include container;
+		
+		.brand{
+			//susy
+			@include span(4);
+			
+			float:left;
+			font-weight:$bold;
+			font-family: $headFont;
+			text-align:center;
+			text-transform: uppercase;
+			background: $navBrandBg;
+			
+			a {
+			color: $navText;
+			text-decoration:none;
+			text-align: center;
+			display: inline-block;
+			padding:10px;
+			font-size:1.5em;	
+				
+				@include breakpoint(max-width $small){
+					font-size:1.2em;
+					span{display: none;}
+				}	//media query
+			}//a	
+		}//.brand
+		
+		ul{
+			//susy
+			@include span(8 at 4 of 12);
+			
+			li{
+				float : left;
+				a{
+					color: $navText;
+					font: $fontMain;
+					font-size: 1em;
+					padding: 10px 10px 10px 45px;
+					display:inline-block;
+					text-decoration:none;
+					
+					//icon styles
+					background-size: 35px;
+					background-repeat: no-repeat;
+					background-position: 2px;
+					
+					&.info { background-image: url("../images/icons/info.png");}
+					&.rooms { background-image: url("../images/icons/rooms.png");}
+					&.dining{ background-image: url("../images/icons/dining.png");}
+					&.events { background-image: url("../images/icons/events.png");}
+					&.attractions { background-image: url("../images/icons/attractions.png");}
+					
+					&:hover {
+						background-color: darken($navBg,5);
+						color: lighten($navText,15);
+					}
+					@include breakpoint(0 $small){
+						padding: 10px 18px;
+						&::after{
+							content:'\000a0';//code for &nbsp:
+							display:block;
+						}
+						span{display:none;}
+					}//media query
+					
+					@include breakpoint($small $medium){
+						padding-left:10px;
+						&.icon{ background-image: none;}
+					}
+					
+					
+				}//a
+				
+			}//li
+		}//ul
+		
+		
+	}//.navbar
+}//#intro #nav

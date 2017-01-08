@@ -1,0 +1,17 @@
+
+@include border-box-sizing; //uses border box sizing like the old IE
+
+body{
+	position:absolute;
+	width:100%;
+	height: 100%;
+}
+
+.scene{
+	position: relative;
+	padding:20px 0;
+}
+
+section{
+	@include container(95%);
+}

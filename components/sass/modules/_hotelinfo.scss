@@ -1,0 +1,79 @@
+#hotelinfo{
+	
+
+	
+//	.container{
+//  	max-width:1400px;
+//		margin:0 auto;
+//		}
+	@include background-image(linear-gradient(top, $purple, lighten($green,20)));
+	color:$light;
+	@include breakpoint($small){
+			@include background-image(url(../images/misc/hotelinfo-bg.svg), linear-gradient(top, $purple, lighten($green,20)));
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: auto 100%;
+		}
+  
+	#{headings()}{
+		 color:$light;
+		font-weight:$light;
+	}
+	h2{
+		font-size:1.2em;	
+	}
+	.heading{
+		h1{
+			font-size:3em;
+			padding-bottom:1rem;
+			padding-left: 0.5em;
+		}
+	}
+	#usefulinfo{
+		
+		@include clearfix;
+		padding-bottom:1em;
+		
+		section{
+			padding:1em;
+			padding-bottom:0;
+			line-height:1.2em;
+			@include breakpoint($small){
+				@include span(1 of 3); //sussy 
+			}//media query
+			@include breakpoint (450px $small_i){
+				&.checklist{
+					@include span(1 of 2); //sussy 
+				}
+				
+				&#arrivalinfo{
+					
+					ul{ 
+						padding-bottom:2em;
+						border-bottom: 1px solid white;
+					}
+				}//#arrivalinfo
+				 
+			}//media query
+		}//section
+	}//#usefulinfo
+	#greenprogram{
+		
+		@include container(95%);
+		background-color: rgba(darken($green,30),0.5);
+		margin-top:20px;
+		border: 1px solid $light;
+		@include border-radius(20px);
+		padding:20px;
+			
+		
+		@include breakpoint($wide){
+			@include background-image(url('../images/misc/greenplanet.png'));
+			background-size: 400px;
+			background-repeat:no-repeat;
+			background-position: 117% center;
+			padding:60px 300px 60px 53px; 
+			
+		}//media query
+	}//#greenprogram
+}//#hotelinfo

@@ -1,0 +1,92 @@
+#rooms{
+	
+	#show{
+		@include clearfix;
+		p{
+			text-align: center;
+			@include span(1);
+			border:1px solid red;
+			position:relative;
+			top:-80px
+		}
+		
+	}
+	
+	#tes{
+		@include container(100%);
+		p{
+			@include span(1);
+			border: 1px solid;
+		}
+	}
+	
+	
+	header{
+		margin-bottom:20px;
+		//@include container (90%);//sussy
+		@include breakpoint($medium){
+		@include pad(1,1);//sussy
+		}
+	}//header
+		
+		.room{
+			
+			@include container(100%);//sussy
+			//@include pad(1,1);//sussy
+			
+			//compass
+			@include display-flex();
+			@include align-items(center);
+			@include justify-content(center);
+		
+			//default padding to handle lack of flex support
+//			padding-top: 200px ;
+
+			h1{
+					font-weight:$bold;
+				}
+			
+			@include breakpoint($small){
+				@include pad(7,1);//sussy
+			}//media query
+			
+			.content{
+				@include border-radius(10px);
+				background: rgba( $light, 0.8);
+				padding:20px;
+				
+			
+				h1{
+					color:$red;
+				}//h1
+					
+			}//.content
+			
+		}//.room
+	 
+		#piccadilly{
+			@include backImage('../images/hotel/rooms_piccadilly.jpg');
+		}
+
+	#cambridge{
+			@include backImage('../images/hotel/rooms_cambridge.jpg');
+		}
+
+		#westminster{
+			@include backImage('../images/hotel/rooms_westminster.jpg');
+		}
+
+		#oxford{
+			@include backImage('../images/hotel/rooms_oxford.jpg');
+		}
+
+		#victoria{
+			@include backImage('../images/hotel/rooms_victoria.jpg');
+		}
+
+		#manchester{
+			@include backImage('../images/hotel/rooms_manchester.jpg');
+		}
+	
+}//#rooms
+
