@@ -1,0 +1,33 @@
+ 
+ intro 
+ nav 
+ wrapper 
+ welcome 
+ hotelinfo 
+ usefulinfo 
+ arrivalinfo 
+ services 
+ accessibility 
+ greenprogram 
+ rooms 
+ show 
+ tes 
+ piccadilly 
+ cambridge 
+ westminster 
+ oxford 
+ victoria 
+ manchester 
+ dining 
+ areadining 
+ inhotel 
+ rooftopcafe 
+ smoothiebar 
+ coffeebar 
+ roomservice 
+ events 
+	 businessmeetings 
+	 weddings 
+ attractions 
+ socialmedia
+ 

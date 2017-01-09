@@ -1,12 +1,29 @@
-@mixin backImage($image){
-
-	background: url($image) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@mixin backImage(
 	
-}
+	$image,
+	$bgAttachment: fixed,
+	$bgPosition: center center,
+	$gradDirection: to bottom,
+	$opacityStart: 0,
+	$opacityEnd: 0
+	
+	){
+
+	background: linear-gradient(
+	   $gradDirection,
+		rgba(0,0,0,$opacityStart),
+		rgba(0,0,0, $opacityEnd)
+	), url($image);
+		
+		background-repeat:  no-repeat;
+		background-position:  $bgPosition;
+		background-attachment:  $bgAttachment; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	
+}//backImage
 
 @mixin clearfix {
 	

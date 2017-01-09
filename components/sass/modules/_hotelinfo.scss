@@ -34,29 +34,46 @@
 		@include clearfix;
 		padding-bottom:1em;
 		
+		#arrivalinfo{
+			ul{
+				
+				li{
+					border-bottom:1px solid $light;
+					padding-top:0.5rem;
+					padding-bottom:0.5rem;
+					strong{
+						color:darken($yellow,10);
+						font-weight: $normal;
+					}
+				}
+			}
+		}
+		
 		section{
 			padding:1em;
 			padding-bottom:0;
 			line-height:1.2em;
+			
 			@include breakpoint($small){
+						&#arrivalinfo{
+					ul{
+						li{
+							border:0;
+						}
+					}
+				}		
 				@include span(1 of 3); //sussy 
 			}//media query
 			@include breakpoint (450px $small_i){
-				&.checklist{
-					@include span(1 of 2); //sussy 
-				}
-				
-				&#arrivalinfo{
-					
-					ul{ 
-						padding-bottom:2em;
-						border-bottom: 1px solid white;
+					&.checklist{
+						@include span(1 of 2); //sussy 
 					}
-				}//#arrivalinfo
+				
+				}//media query
 				 
-			}//media query
-		}//section
-	}//#usefulinfo
+			}//section
+		}//#usefulinfo
+
 	#greenprogram{
 		
 		@include container(95%);

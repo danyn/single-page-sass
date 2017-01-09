@@ -1,0 +1,31 @@
+#attractions{
+	@include clearfix;
+	@include container(100%);
+	padding: 0;
+	@include backImage('../images/hotel/attractions.jpg');
+	
+	
+	//flex
+	@include display-flex();
+	@include align-items(center);
+	@include justify-content(center);
+	article{
+		@include container(80%);
+		@include breakpoint($medium){
+			@include container(50%);
+		}//media query
+	
+		padding:1.2rem;
+		margin-top: 200px;
+		background-color: rgba($light,0.8);
+		@include border-radius(10px);
+		h1{
+			font-weight:normal;
+			color:lighten($headColor,10);
+		}
+		
+		p{
+			line-height: 120%;
+		}
+	}//article
+}//#attractions

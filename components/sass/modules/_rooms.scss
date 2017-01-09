@@ -31,6 +31,10 @@
 		
 		.room{
 			
+			@include breakpoint($small){
+				@include pad(7,1);//sussy
+			}//media query
+			
 			@include container(100%);//sussy
 			//@include pad(1,1);//sussy
 			
@@ -46,9 +50,7 @@
 					font-weight:$bold;
 				}
 			
-			@include breakpoint($small){
-				@include pad(7,1);//sussy
-			}//media query
+			
 			
 			.content{
 				@include border-radius(10px);
