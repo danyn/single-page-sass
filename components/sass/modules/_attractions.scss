@@ -4,7 +4,7 @@
 	padding: 0;
 	@include backImage('../images/hotel/attractions.jpg');
 	
-	
+//	padding-top:200px;
 	//flex
 	@include display-flex();
 	@include align-items(center);
@@ -16,7 +16,7 @@
 		}//media query
 	
 		padding:1.2rem;
-		margin-top: 200px;
+//		margin-top: 200px;
 		background-color: rgba($light,0.8);
 		@include border-radius(10px);
 		h1{

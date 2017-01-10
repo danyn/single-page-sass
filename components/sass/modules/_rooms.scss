@@ -88,6 +88,15 @@
 
 		#manchester{
 			@include backImage('../images/hotel/rooms_manchester.jpg');
+			position:relative;
+			#a, #b, #c, #d{
+				position:absolute;
+				bottom:50px;
+			}
+			#a{left:20%}
+			#b{left:40%}
+			#c{left:60%}
+			#d{left:80%}
 		}
 	
 }//#rooms

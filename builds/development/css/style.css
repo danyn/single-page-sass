@@ -860,6 +860,28 @@ header .fullheight .hgroup p img {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
+}
+/* line 92, ../../../components/sass/modules/_rooms.scss */
+#rooms #manchester #a, #rooms #manchester #b, #rooms #manchester #c, #rooms #manchester #d {
+  position: absolute;
+  bottom: 50px;
+}
+/* line 96, ../../../components/sass/modules/_rooms.scss */
+#rooms #manchester #a {
+  left: 20%;
+}
+/* line 97, ../../../components/sass/modules/_rooms.scss */
+#rooms #manchester #b {
+  left: 40%;
+}
+/* line 98, ../../../components/sass/modules/_rooms.scss */
+#rooms #manchester #c {
+  left: 60%;
+}
+/* line 99, ../../../components/sass/modules/_rooms.scss */
+#rooms #manchester #d {
+  left: 80%;
 }
 
 /* line 1, ../../../components/sass/modules/_attractions.scss */
@@ -904,7 +926,6 @@ header .fullheight .hgroup p img {
   margin-left: auto;
   margin-right: auto;
   padding: 1.2rem;
-  margin-top: 200px;
   background-color: rgba(252, 234, 234, 0.8);
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
